@@ -18,7 +18,11 @@ export default new Router({
     },
     {
       path: '/mediaInformation',
-      component: () => import(/* webpackChunkName: "about" */ './views/MediaInformation.vue')
+      component: () => import(/* webpackChunkName: "MediaInformation" */ './views/MediaInformation.vue')
+    },
+    {
+      path: '/news',
+      component: () => import(/* webpackChunkName: "News" */ './views/News.vue')
     }
   ]
 })
