@@ -1,0 +1,292 @@
+body {
+  width: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+.header_box {
+  height: 60px;
+  line-height: 60px;
+  background-color: #2f3133;
+}
+.header_box .header {
+  width: 1200px;
+  margin: 0 auto;
+}
+.header_box .header .nav {
+  height: 100%;
+  overflow: hidden;
+}
+.header_box .header .nav a {
+  height: 100%;
+  color: #fff;
+  line-height: 60px;
+  font-size: 16px;
+}
+.header_box .header .nav a.active {
+  color: #fdd108;
+}
+.content {
+  width: 100%;
+}
+.content .advert {
+  width: 100%;
+  height: 600px;
+  text-align: center;
+  background: url("/res/static/images/banner_bg.png") no-repeat top;
+}
+.content .advert .box {
+  padding-top: 10px;
+  margin-top: 47px;
+  display: inline-block;
+  width: 1200px;
+}
+.content .advert .box .left {
+  padding: 90px 120px 0 70px;
+}
+.content .advert .box .left p {
+  float: left;
+  font-size: 20px;
+  color: #fff;
+  text-align: left;
+}
+.content .advert .box .left p.text {
+  margin: 30px 0;
+}
+.content .advert .box .left p.btn {
+  cursor: pointer;
+}
+.content .advert .box .right {
+  padding-right: 90px;
+}
+.content .wapper1 {
+  background: #fff;
+}
+.content .wapper1 .box {
+  width: 1200px;
+  margin: 0 auto;
+  height: 480px;
+  padding-top: 50px;
+}
+.content .wapper1 .box .top {
+  height: 66px;
+  line-height: 66px;
+  text-align: center;
+  color: #2f3133;
+  font-size: 30px;
+}
+.content .wapper1 .box .top span {
+  display: inline-block;
+  border-bottom: 2px solid #FDD108;
+}
+.content .wapper1 .box .mid {
+  margin-top: 100px;
+  height: 314px;
+}
+.content .wapper1 .box .mid p {
+  text-align: center;
+}
+.content .wapper1 .box .mid p.label {
+  font-size: 18px;
+  color: #2f3133;
+  margin: 10px 0;
+}
+.content .wapper1 .box .mid p.text {
+  font-size: 16px;
+  color: #5e5752;
+}
+.content .wapper4 {
+  background: url("/res/static/images/wapper4_bg.png") no-repeat top;
+}
+.content .wapper4 .box {
+  height: 400px;
+  padding-top: 20px;
+}
+.content .wapper4 .box .top {
+  color: #fff !important;
+}
+.content .wapper4 .box .mid {
+  margin-top: 80px;
+  height: 234px;
+}
+.content .wapper4 .box .mid .label {
+  color: #fff !important;
+}
+.content .wapper2 {
+  background: #FFFCF9;
+}
+.content .wapper2 .box {
+  margin: 0 auto;
+  width: 1200px;
+  height: 400px;
+}
+.content .wapper2 .box .layui-row {
+  height: 100%;
+}
+.content .wapper2 .box .layui-row > div {
+  height: 100%;
+}
+.content .wapper2 .box .layui-row .layui-col-md7 .label {
+  margin: 150px 0 30px;
+  font-size: 30px;
+  color: #47423e;
+}
+.content .wapper2 .box .layui-row .layui-col-md7 .text {
+  font-size: 20px;
+  color: #5e5752;
+}
+.content .wapper2 .box .layui-row .layui-col-md5 {
+  vertical-align: bottom;
+  position: relative;
+}
+.content .wapper2 .box .layui-row .layui-col-md5 img {
+  position: absolute;
+  bottom: 0;
+}
+.content .wapper3 {
+  background: url("/res/static/images/tanchuang_bg.png") 1160px;
+}
+.content .wapper3 .box {
+  margin: 0 auto;
+  width: 1200px;
+  height: 400px;
+}
+.content .wapper3 .box .layui-row {
+  height: 100%;
+}
+.content .wapper3 .box .layui-row > div {
+  height: 100%;
+}
+.content .wapper3 .box .layui-row .layui-col-md5 .label {
+  margin: 150px 0 30px;
+  font-size: 30px;
+  color: #47423e;
+}
+.content .wapper3 .box .layui-row .layui-col-md5 .text {
+  font-size: 20px;
+  color: #5e5752;
+}
+.content .wapper3 .box .layui-row .layui-col-md7 {
+  vertical-align: bottom;
+  position: relative;
+}
+.content .wapper3 .box .layui-row .layui-col-md7 img {
+  position: absolute;
+  bottom: 0;
+}
+.content .wapper5 {
+  background: #fff;
+}
+.content .wapper6 {
+  background: #FFFCF9;
+}
+.content .wapper7 {
+  background: url("/res/static/images/tanchuang_bg.png") 1160px;
+}
+.content .wapper8 {
+  background: url("/res/static/images/content_banner.png") no-repeat top;
+}
+.content .wapper8 .box {
+  width: 1200px;
+  margin: 0 auto;
+  height: 300px;
+  text-align: center;
+}
+.content .wapper8 .box p {
+  width: 258px;
+  height: 60px;
+  line-height: 60px;
+  background-color: #FDD108;
+  border-radius: 30px 30px 30px 30px;
+  cursor: pointer;
+  text-align: center;
+  margin: 180px auto 0;
+  display: inline-block;
+  color: #2f3133;
+  font-size: 20px;
+}
+.content .banner {
+  height: 400px;
+  background: url("/res/static/images/news_banner.png") no-repeat top;
+}
+.content .newList {
+  background: #fff;
+  min-height: 300px;
+}
+.content .newList .item {
+  width: 1200px;
+  margin: 0 auto;
+  height: 244px;
+  padding: 44px 0;
+  border-bottom: 1px solid #e6e6e6;
+}
+.content .newList .item img {
+  width: 244px;
+  height: 162px;
+  border: 1px solid #ccc;
+}
+.content .newList .item p {
+  margin-bottom: 5px;
+}
+.content .newList .item .label {
+  font-size: 20px;
+  color: #333333;
+}
+.content .newList .item .text {
+  font-size: 14px;
+  color: #333333;
+  height: 63px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.content .newList .item .date {
+  font-size: 12px;
+  color: #666666;
+}
+.content .newList .item .btn {
+  width: 112px;
+  height: 36px;
+  font-size: 14px;
+  line-height: 36px ;
+  border-radius: 4px;
+  background: #FDD108;
+  text-align: center;
+  color: #333;
+  cursor: pointer;
+}
+.content .newList .item:last-child {
+  border: none;
+  margin-bottom: 0  ;
+}
+.content .about_banner {
+  background: url("/res/static/images/about_banner.png") no-repeat top;
+}
+.content .about_banner .box {
+  width: 1200px;
+  height: 400px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+.content .about_banner .box .label {
+  font-size: 40px;
+  color: #fff;
+}
+.content .about_banner .box .text {
+  margin-top: 50px;
+  font-size: 18px;
+  color: #fff;
+}
+.footer {
+  height: 220px;
+  background: #23221F;
+  color: #fff;
+  padding-top: 27px;
+}
+.footer .logo {
+  margin: 0px auto 47px;
+}
+.footer .text {
+  font-size: 14px;
+  margin-top: 10px;
+}
+/*# sourceMappingURL=index.css.map */
