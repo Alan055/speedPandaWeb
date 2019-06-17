@@ -51,17 +51,17 @@
   <!--广告位-->
   <div class="advert">
     <div class="box layui-row">
-        <div class="layui-col-md8 left">
-          <p class="layui-row"><img src="/res/static/images/banner_logo.png" alt=""></p>
-          <p class="layui-row text">"极速熊猫是一家集多样化金融产品服务、电商服务为一体的平台。
-            致力于为用户提供一站式在线借贷、各类金融增值、电商消费及定制化会员服务。"</p>
-          <p class="layui-row btn"><img src="/res/static/images/banner_btn.png" alt=""></p>
-        </div>
-        <div class="layui-col-md4 right">
-          <img src="/res/static/images/banner_phone.png" alt="">
-        </div>
+      <div class="layui-col-md8 left">
+        <p class="layui-row"><img src="/res/static/images/banner_logo.png" alt=""></p>
+        <p class="layui-row text">"极速熊猫是一家集多样化金融产品服务、电商服务为一体的平台。
+          致力于为用户提供一站式在线借贷、各类金融增值、电商消费及定制化会员服务。"</p>
+        <p class="layui-row btn"><img src="/res/static/images/banner_btn.png" alt=""></p>
+      </div>
+      <div class="layui-col-md4 right">
+        <img src="/res/static/images/banner_phone.png" alt="">
       </div>
     </div>
+  </div>
   <!--一站式-->
   <div class="wapper1">
     <div class="box">
@@ -194,12 +194,19 @@
   <p class="logo"><img src="/res/static/images/logo.png" alt=""></p>
   <p class="text">版权所有©海南新浪爱问普惠科技有限公司</p>
   <p class="text">Copyright©Hainan Sina iask inclusive financial cooperation</p>
-  <p class="text">琼icp备 17000405号-1  丨  未经许可，不得复制、转载或摘编，违者必究</p>
+  <p class="text">琼icp备 17000405号-1 丨 未经许可，不得复制、转载或摘编，违者必究</p>
 
 </div>
+
+<div id="scan" >
+  <p class="panda"><img src="/res/static/images/panda.png" alt=""></p>
+  <p class="text">请打开手机扫一扫，进入快捷申请通道</p>
+  <p class="photo"><img src="/res/static/images/scan.png" alt=""></p>
+</div>
+
 <!-- end-footer -->
 <script>
-	layui.use(['carousel', 'jquery', 'element'], function () {
+	layui.use(['carousel', 'jquery', 'element', 'layer'], function () {
 		var carousel = layui.carousel, $ = layui.$;
 		//建造实例
 		carousel.render({
@@ -218,8 +225,21 @@
 			var imgH = $('.imgbox div.layui-this').outerHeight();
 			$('.imgH').css('height', imgH + 'px')
 		};
+    $('.content .advert .btn img').click(click)
+    $('.content .wapper8 .box p').click(click)
+    function click(){
+	    layer.open({
+		    type: 1,
+		    content: $('#scan'),
+		    scrollbar: false,
+		    resize: false,
+	    });
+    }
+
+
 
 	});
+
 </script>
 </body>
 </html>
