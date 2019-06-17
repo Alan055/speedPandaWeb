@@ -25,9 +25,10 @@
   <div class="header">
     <ul class="app-header">
       <li class="app-header-menuicon">
-        <i class="layui-icon layui-icon-more-vertical"></i>
+        <img src="/res/static/images/menu.png" alt="">
       </li>
     </ul>
+    <span class="title">一站触达美好生活</span>
     <h1 class="logo">
       <a href="#"><img src="/res/static/images/logo.png" alt=""></a>
     </h1>
@@ -38,10 +39,9 @@
       <a href="/about/index.html" class="active">关于我们</a>
     </div>
     <ul class="layui-nav header-down-nav">
-      <li class="layui-nav-item"><a href="index.html" class="active">首页</a></li>
-      <li class="layui-nav-item"><a href="html/case.html">案例</a></li>
-      <li class="layui-nav-item"><a href="html/service.html">服务</a></li>
-      <li class="layui-nav-item"><a href="html/about.html">关于</a></li>
+      <li class="layui-nav-item"><a href="/" >首页</a></li>
+      <li class="layui-nav-item"><a href="/news/index.html" >媒体报道</a></li>
+      <li class="layui-nav-item"><a href="/about/index.html" class="active">关于我们</a></li>
     </ul>
   </div>
 </div>
@@ -58,6 +58,7 @@
       </p>
     </div>
   </div>
+
   <!--定位-->
   <div class="detail layui-row">
     <div class="layui-col-md6">
@@ -74,6 +75,27 @@
       </div>
     </div>
   </div>
+
+  <div class="detail_h5">
+    <div class="item">
+      <p class="label"><em></em>我们的团队</p>
+      <p class="text">我们是一支由移动互联网、金融、IT界专业人士组成的精英团队，团队目前拥有400多人，成员大多来自腾讯、阿里巴巴等互联网领跑企业，在互联网金融、渠道拓展、商业化等方面有着丰富的经验。<br>
+        团队历经多年实战经验累积，致力为用户提供高效、安全、优质的全方面互联网服务，专注打造人与机构的连接。
+      </p>
+    </div>
+    <div class="item">
+      <p class="label"><em></em>客服联系电话</p>
+      <p class="text">400-829-1788</p>
+    </div>
+    <div class="item">
+      <p class="label"><em></em>公司地址</p>
+      <p class="text">广东省深圳市南山区科技南八路超多维大厦12F</p>
+      <div class="item1">
+        <img src="/res/static/images/location.png" alt="">
+      </div>
+    </div>
+
+  </div>
 </div>
 
 <!-- end-content -->
@@ -84,8 +106,9 @@
   <p class="logo"><img src="/res/static/images/logo.png" alt=""></p>
   <p class="text">版权所有©海南新浪爱问普惠科技有限公司</p>
   <p class="text">Copyright©Hainan Sina iask inclusive financial cooperation</p>
-  <p class="text">琼icp备 17000405号-1 丨 未经许可，不得复制、转载或摘编，违者必究</p>
-
+  <p class="text2 text">琼icp备 17000405号-1  丨  未经许可，不得复制、转载或摘编，违者必究</p>
+  <p class="text1 text">琼icp备 17000405号-1</p>
+  <p class="text1 text">未经许可，不得复制、转载或摘编，违者必究</p>
 </div>
 <!-- end-footer -->
 <script>
@@ -101,6 +124,9 @@
 		});
 		$('.app-header-menuicon').on('click', function () {
 			$('.header-down-nav').toggleClass('down-nav')
+			$('body > .content').click(function () {
+				$('.header-down-nav').removeClass('down-nav')
+			})
 		})
 		var imgH = $('.imgbox div.layui-this').outerHeight();
 		$('.imgH').css('height', imgH + 'px')
