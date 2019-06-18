@@ -450,8 +450,8 @@ body {
     line-height: normal;
   }
   .header_box .header .layui-nav li a {
-    height: 42px;
-    line-height: 42px;
+    height: 54px;
+    line-height: 54px;
     color: #666;
     padding: 0;
   }
@@ -715,10 +715,10 @@ body {
   .content .detail_h5 .item .label em {
     display: inline-block;
     width: 4px;
-    height: 16px;
+    height: 18px;
     background: #fdd108;
     margin-right: 10px;
-    vertical-align: text-bottom;
+    vertical-align: sub;
   }
   .content .detail_h5 .item .text {
     font-size: 12px;
