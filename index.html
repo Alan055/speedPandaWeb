@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>「极速熊猫」-个人小额贷款无抵押信用贷款_正规贷款平台</title>
   <meta charset="UTF-8">
-  <title>一站触达美好生活</title>
+  <meta name="author" content="极速熊猫" />
+  <meta name="keywords" content="小额贷款,信用贷款,贷款平台,个人信用贷款,无抵押贷款,个人小额贷款">
+  <meta name="description" content="贷款哪家好？缺钱、急用钱就来「极速熊猫」，专注于个人小额贷款、无抵押信用贷款等在线借贷服务，无抵押无担保，凭身份证申请,不收手续费，1小时审批，可最高可贷30万！">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <script type="text/javascript" src="/res/layui/layui.js"></script>
@@ -40,16 +43,16 @@
       <a href="/"><img src="/res/static/images/logo.png" alt=""></a>
     </h1>
     <div class="nav" style="visibility: visible">
-      <a href="/index.html" class="active">首页</a>
-      <a href="/news/index.html">媒体报道</a>
-      <!--<a href="/info/index.html">贷款攻略</a>-->
-      <a href="/about/index.html">关于我们</a>
+      <a href="/" class="active">首页</a>
+      <a href="/news/">媒体报道</a>
+      <!--<a href="/info/">贷款攻略</a>-->
+      <a href="/about/">关于我们</a>
     </div>
     <ul class="layui-nav header-down-nav">
-      <li class="layui-nav-item"><a href="/" class="active">首页</a></li>
-      <li class="layui-nav-item"><a href="/news/index.html">媒体报道</a></li>
-      <!--<li class="layui-nav-item"><a href="/info/index.html">贷款攻略</a></li>-->
-      <li class="layui-nav-item"><a href="/about/index.html">关于我们</a></li>
+      <li class="layui-nav-item"><a data-href="/"  class="active">首页</a></li>
+      <li class="layui-nav-item"><a data-href="/news/" >媒体报道</a></li>
+      <!--<li class="layui-nav-item"><a data-href="/info/" >贷款攻略</a></li>-->
+      <li class="layui-nav-item"><a data-href="/about/">关于我们</a></li>
     </ul>
   </div>
 </div>
@@ -346,6 +349,13 @@
 		    resize: false,
 	    });
     }
+
+    //
+    $('.header-down-nav a').click(function (e) {
+    	var target = e.target
+	    $('.header-down-nav').removeClass('down-nav')
+	    location.href = $(this).data('href')
+    })
 
 	});
 

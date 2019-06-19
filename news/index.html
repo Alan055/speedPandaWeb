@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>媒体报道 - 极速熊猫</title>
   <meta charset="UTF-8">
-  <title>一站式触达美好生活</title>
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="author" content="极速熊猫" />
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+
   <script type="text/javascript" src="/res/layui/layui.js"></script>
   <link rel="Shortcut Icon" href="/res/static/images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="/res/layui/css/layui.css">
@@ -33,16 +36,16 @@
       <a href="/"><img src="/res/static/images/logo.png" alt=""></a>
     </h1>
     <div class="nav" style="visibility: visible">
-      <a href="/index.html" >首页</a>
-      <a href="/news/index.html" class="active">媒体报道</a>
-      <!--<a href="/info/index.html">贷款攻略</a>-->
-      <a href="/about/index.html">关于我们</a>
+      <a href="/" >首页</a>
+      <a href="/news/" class="active">媒体报道</a>
+      <!--<a href="/info/">贷款攻略</a>-->
+      <a href="/about/">关于我们</a>
     </div>
     <ul class="layui-nav header-down-nav">
-      <li class="layui-nav-item"><a href="/" >首页</a></li>
-      <li class="layui-nav-item"><a href="/news/index.html" class="active">媒体报道</a></li>
-      <!--<li class="layui-nav-item"><a href="/info/index.html">贷款攻略</a></li>-->
-      <li class="layui-nav-item"><a href="/about/index.html">关于我们</a></li>
+      <li class="layui-nav-item"><a data-href="/" >首页</a></li>
+      <li class="layui-nav-item"><a data-href="/news/" class="active">媒体报道</a></li>
+      <!--<li class="layui-nav-item"><a data-href="/info/">贷款攻略</a></li>-->
+      <li class="layui-nav-item"><a data-href="/about/">关于我们</a></li>
     </ul>
   </div>
 </div>
@@ -128,7 +131,11 @@
 			var imgH = $('.imgbox div.layui-this').outerHeight();
 			$('.imgH').css('height', imgH + 'px')
 		};
-
+		$('.header-down-nav a').click(function (e) {
+			var target = e.target
+			$('.header-down-nav').removeClass('down-nav')
+			location.href = $(this).data('href')
+		})
 	});
 </script>
 </body>
