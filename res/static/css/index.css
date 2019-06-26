@@ -450,8 +450,8 @@ body {
     line-height: normal;
   }
   .header_box .header .layui-nav li a {
-    height: 54px;
-    line-height: 54px;
+    height: 42px;
+    line-height: 42px;
     color: #666;
     padding: 0;
   }
